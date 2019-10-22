@@ -1,5 +1,7 @@
 @import '_variables.scss';
 
+body { background-color: #252EF5; }
+
 .social-links {
     background-color: $blue;
     background-image: url('{{ baseUrl }}/images/allPages/bannerFade.jpg');
