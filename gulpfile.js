@@ -12,7 +12,7 @@ function MinifyCSS() {
     return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/scss/*.scss'], {
         allowEmpty: true,
     }).pipe(sass({
-        outputStyle: 'compressed',
+        outputStyle: 'compact',
         verbose: true,
     })).pipe(gulp.dest('./css'));
 }
