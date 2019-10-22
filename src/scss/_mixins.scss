@@ -43,15 +43,15 @@
             margin-left: $percentage;
         }
         @if ($i == 1) {
-            .grid__col-order-first {
+            .grid__col-order-first\@#{$grid__size} {
                 order: -$i;
             }
         }
-        .grid__col-order-#{$i} {
+        .grid__col-order-#{$i}\@#{$grid__size} {
             order: $i;
         }
         @if ($i == $grid__columns) {
-            .grid__col-order-last {
+            .grid__col-order-last\@#{$grid__size} {
                 order: $i + 1;
             }
         }
