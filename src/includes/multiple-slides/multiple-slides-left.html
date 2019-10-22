@@ -1,0 +1,5 @@
+<div class="multipleslides" onclick="location.href='{{ baseUrl }}/mypremierelistings.html';">
+    {%- for i in 1..10 %}
+    <img src="{{ baseUrl }}/flash/homePage/threeSlideshowsOnTop/img01/image{{ i }}.jpg" alt="Slide {{i}}" {% if i == 1 %}class="active"{%- endif %} />
+    {% endfor -%}
+</div>

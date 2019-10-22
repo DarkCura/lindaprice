@@ -1,0 +1,38 @@
+{%- set socialLinks = [
+        {
+            href: "http://www.bloglindaprice.com/",
+            imgSrc: baseUrl ~ "/images/allPages/BLOG_Button_2.jpg",
+            altText: "Blog"
+        },
+        {
+            href: "http://www.linkedin.com/home?trk=guest_home_login",
+            imgSrc: baseUrl ~ "/images/allPages/linkedin11.jpg",
+            altText: "LinkedIn"
+        },
+        {
+            href: "http://twitter.com/#!/search/lindapriceremax",
+            imgSrc: baseUrl ~ "/images/allPages/twitter11.jpg",
+            altText: "twitter"
+        },
+        {
+            href: "http://www.facebook.com/pages/Linda-Price/131540076910992",
+            imgSrc: baseUrl ~ "/images/allPages/facebook11.jpg",
+            altText: "facebook"
+        }
+    ] -%}
+<div class="row">
+    <div class="col-6">
+        <img src="{{ baseUrl }}/images/LindasTitles2.jpg" alt="Linda Price Broker, ABR, CRS, GRI, SRES, CDPE, E-PRO" />
+    </div>
+    <div class="col-6 social-links">
+        <ul>
+            {%- for socialLink in socialLinks %}
+            <li>
+                <a href="{{ socialLink.href }}" target="_blank">
+                    <img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.altText }}" />
+                </a>
+            </li>
+            {%- endfor %}
+        </ul>
+    </div>
+</div>

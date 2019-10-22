@@ -1,0 +1,45 @@
+{%- set links = [
+        {
+            name: "Contact Us",
+            href: "/about/contact.html"
+        },
+        {
+            name: "Email Us",
+            href: "/about/email.html"
+        },
+        {
+            name: "Bookmark Us",
+            onClick: "window.external.addfavorite('" ~ baseUrl ~ "/index.html','Linda Price');"
+        },
+        {
+            name: "Ask Linda",
+            href: "/about/ask-linda.html"
+        },
+        {
+            name: "Site Map",
+            href: "/sitemap.html"
+        }
+    ] -%}
+    <header>
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ baseUrl }}/lindaprice/images/lindaprice22.jpg" alt="Linda Price" />
+            </div>
+            <div class="col-8">
+                {% include "skyline.html" %}
+            </div>
+            <div class="col-2">
+                <ul>
+                    {%- for link in links %}
+                    <li>
+                        <a {% if link.href is defined and link.href is not null -%}href="{{ link.href }}"{% endif -%} {%- if link.onClick is defined and link.onClick is not null %}onclick="{{ link.onClick }}"{% endif -%}>{{ link.name }}</a>
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+        </div>
+        {% include "header-social-links.html" %}
+    </header>
+    <nav>
+        {% include "navigation.html" %}
+    </nav>

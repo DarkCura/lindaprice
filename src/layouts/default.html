@@ -1,0 +1,58 @@
+{%- set protocol = "https" -%}
+{%- set subDomain = "www" -%}
+{%- set domain = "lindaprice" -%}
+{%- set topLevelDomain = "com" -%}
+{%- set baseUrl = protocol ~ "://" ~ subDomain ~ "." ~ domain ~ "." ~ topLevelDomain -%}
+{%- set revisit = "3 days" -%}
+{%- set yearsInBusiness = (now|date("Y") - 1988) -%}
+{%- set googleVerification = "B2FDoM1CuL2lrLV9Ho4SPLcdneIkrYbHrqLtyyF7PD8" -%}
+{%- set scripts = [
+    "/scripts/__utm.js",
+    "/scripts/ieupdate.js",
+    "/scripts/slides.js",
+    "/scripts/mm_menu.js",
+    "/scripts/index_menu.js",
+    "/scripts/swiffy.js",
+    "/scripts/banner.js",
+    "/scripts/411foreclosureconnection.js",
+    "https://code.jquery.com/jquery-3.4.1.min.js",
+    "/scripts/pngfix.js",
+    "/scripts/AC_RunActiveContent.js"
+    ] -%}
+<!--
+    MISSING SCRIPTS: 
+        "/scripts/srs.js",
+-->
+<!DOCTYPE>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ title }}</title>
+
+        <meta name="keywords" content="{{ metaKeywords }}" />
+        <meta name="description" content="{{ metaDescription }}" />
+        <meta name="google-site-verification" content="{{ googleVerification }}" />
+        <meta name="msnbot" content="nocache" />
+        <meta name="googlebot" content="noarchive" />
+        <meta name="robots" content="index,noarchive,follow,all" />
+        <meta name="revisit" content="{{ revisit }}" />
+        <meta name="revisit-after" content="{{ revisit }}" />
+
+        <link rel="stylesheet" href="/css/global.css" type="text/css" />
+        <link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+    </head>
+    <body>
+        {% include "../includes/google-search.html" %}
+        <div class="container">
+            {% include "../includes/header.html" %}
+        </div>
+        {% block content %}{% endblock %}
+
+        {%- for script in scripts %}
+        <script src="{{ script }}" async></script>
+        {%- endfor %}
+        {% include "../includes/google-search-script.html" %}
+        {% include "../includes/skyline-script.html" %}
+        {% include "../includes/multiple-slides-script.html" %}
+    </body>
+</html>

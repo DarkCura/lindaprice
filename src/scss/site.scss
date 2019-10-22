@@ -1,0 +1,17 @@
+@import '_variables.scss';
+
+.social-links {
+    background-color: $blue;
+    background-image: url('{{ baseUrl }}/images/allPages/bannerFade.jpg');
+}
+
+.multipleslides {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #006;
+    & > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

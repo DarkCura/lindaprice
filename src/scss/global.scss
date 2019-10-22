@@ -1,0 +1,257 @@
+a {
+	color: #d32300;
+	text-decoration: none;
+}
+
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	text-decoration: none;
+}
+a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	text-decoration: none;
+}
+
+
+div#whiteLinksToRed a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div#whiteLinksToRed a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+div#whiteLinksToRed a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+div#whiteLinksToRed a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	text-decoration: none;
+}
+div#whiteLinksToRed a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+.alltownsH2 {
+	font-size: 18pt;
+	margin: 0px;
+	text-align: center;
+}
+
+.allTownTownName, .allTownPhoto, .allTownLink {
+	font-weight: bold;
+	text-align: center;
+}
+
+.allTownTownName {
+	color: #0000ff;
+	font-size: 16px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+.allTownLink {
+	color: #c00;
+	font-style: italic;
+}
+
+.body {
+	background-image:url(../images/BackgroundStripe.jpg);
+	font-family: arial,tahoma,verdana;
+	background-repeat:repeat-x;
+	background-color:#252EF5;
+	color:#FFFFFF;
+	font-size: 12pt;
+	font-weight:bold;
+}
+
+.bigBold, .bigBold11, .bigBold12, .bigBold16 {
+	font-weight: bold;
+}
+
+.bigBold11 {
+	font-size: 11pt;
+}
+.bigBold12 {
+	font-size: 12pt;
+}
+
+.bigBoldGreen12 {
+	font-size: 12pt;
+}
+
+.bigBold {
+	font-size: 14pt;
+}
+
+.bigBold16 {
+	font-size: 16pt;
+}
+
+.blue {
+	color: #00c;
+	text-decoration: none;
+}
+
+.contactus {
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:12px;
+color: #ffffff;
+line-height: 2em;
+padding-left:1em;
+text-decoration:none;
+}
+
+.contactus A {
+text-decoration:none;
+}
+
+.contactInfo {
+	color: #000;
+	font-size:10pt;
+	font-weight:bold;
+	text-align:right;
+	padding-right:10px;
+}
+
+.homepagelinks {
+	font-family: arial,tahoma,helvetica;
+	font-weight: bold;
+	font-size: 11pt;
+	height:72px;
+}
+
+.headingallpages{
+		font-size:40px; 
+		text-align:center; 
+		font-weight:bold;
+		}
+.headingallpagesblue{
+		font-size:40px;  
+		text-align:center; 
+		font-weight:bold;
+		color:#000000; 
+		border-width:0px;
+		}	
+.listingLabel {
+	font-weight: bold;
+}
+.listingLink {
+	color: #00C;
+}
+.listingLink:visited {
+	color: #009;
+}
+
+.mNav {
+	font-weight: bold;
+	text-align: center;
+	width: 150px;
+}
+.mNav A {
+	color: #FFF;
+}
+.mainText {
+	font-size: 12pt;
+	line-height: 1.5em;
+}
+.mainText A {
+	color: #00C;
+}
+
+#nav {
+	background-image: url('../TEST/bg_nav.gif');
+	height: 34px;
+}
+
+.red, .redItal {
+	color: #c00;
+	text-decoration: none;
+}
+
+.redItal, .blackItal {
+	font-style: italic;
+	font-weight: bold;
+}
+
+	
+.subheadingallpages{
+		font-size:23px; 
+		text-align:center; 
+		font-weight:bold;
+		}
+.subheadingallpagesblue{
+		font-size:23px; 
+		text-align:center; 
+		font-weight:bold;
+		color:#000000; 
+		border-width:0px;
+		}	
+		
+.showcaseTable {
+	width: 775px;
+}
+
+.showcaseH1 {
+	font-size: 22pt;
+	margin: 8px 0px 8px 0px;
+	text-align: center;
+	width: 775px;
+}
+
+.showcaseTD {
+	border-bottom: 1px #666 dashed;
+	padding: 8px 0px;
+}
+
+.showcaseCategory H3 {
+	margin: 10px 0px 0px 0px;
+}
+
+.showcasePrice {
+	font-size: 14pt;
+}
+
+.showcaseAddress {
+	font-size: 10pt;
+}
+
+.showcaseDesc {
+	font-size: 10pt;
+	font-style: italic;
+	font-weight:bold;
+	color: #c00;
+}
+
+.showcaseMoreResults {
+	text-align: right;
+}
+.showcaseSub {
+	font-size: 10pt;
+}
+
+.white_no_decoration {
+	color: #FFFFFF;
+	text-decoration: none;
+}
