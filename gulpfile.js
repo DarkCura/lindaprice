@@ -8,7 +8,7 @@ function Templates() {
             .pipe(gulp.dest('.'));
 }
 
-function Minify() {
+function MinifyCSS() {
     return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/scss/*.scss'], {
         allowEmpty: true,
     }).pipe(sass({
@@ -17,5 +17,11 @@ function Minify() {
     })).pipe(gulp.dest('./css'));
 }
 
+function MinifyJS() {
+    return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/scripts/*.js'], {
+        allowEmpty: true,
+    }).pipe(gulp.dest('./scripts'));
+}
+
 exports.Templates = Templates;
-exports.Minify = Minify;
+exports.Minify = gulp.parallel(MinifyCSS, MinifyJS);
