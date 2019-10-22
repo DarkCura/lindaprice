@@ -21,14 +21,14 @@
         }
     ] -%}
     <header>
-        <div class="row">
-            <div class="col-2/12">
+        <div class="grid__row">
+            <div class="grid__col-12/12 grid__col-2/12@md grid__col-order-first@med">
                 <img src="{{ baseUrl }}/lindaprice/images/lindaprice22.jpg" alt="Linda Price" />
             </div>
-            <div class="col-8/12">
+            <div class="grid__col-12/12 grid__col-8/12@md grid__col-order-first@sm">
                 {% include "skyline.html" %}
             </div>
-            <div class="col-2/12">
+            <div class="grid__col-12/12 grid__col-2/12@md grid__col-order-last">
                 <ul>
                     {%- for link in links %}
                     <li>

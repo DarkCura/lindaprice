@@ -1,0 +1,85 @@
+@mixin grid-generator($grid__breakpoints, $grid__columns, $excludeQuery: 'xs') {
+    @each $grid__breakpoint in $grid__breakpoints {
+        @if $excludeQuery == nth($grid__breakpoint, 1) {
+            .grid {
+                width: 100%;
+                margin: 0 auto;
+                &__fluid {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            .grid__row {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            @include baseline-grid-column-generator($grid__columns);
+        }
+        $relativeMedia: (nth($grid__breakpoint, 2)/16);
+
+        @media only screen and (min-width: #{$relativeMedia}rem) { 
+            .grid {
+                max-width: #{$relativeMedia}rem;
+                margin: 0 auto;
+                &__fluid {
+                    margin: 0;
+                    max-width: 100%;
+                }
+            }
+            @include grid-column-generator(nth($grid__breakpoint, 1), $grid__columns)
+        }
+    }
+}
+
+@mixin grid-column-generator($grid__size, $grid__columns) {
+	@for $i from 1 through $grid__columns {
+        $percentage: percentage($i / $grid__columns);
+		.grid__col-#{$i}\/#{$grid__columns}\@#{$grid__size} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+        .grid__col-offset-#{$i}\@#{$grid__size} {
+            margin-left: $percentage;
+        }
+        @if ($i == 1) {
+            .grid__col-order-first {
+                order: -$i;
+            }
+        }
+        .grid__col-order-#{$i} {
+            order: $i;
+        }
+        @if ($i == $grid__columns) {
+            .grid__col-order-last {
+                order: $i + 1;
+            }
+        }
+	}
+}
+
+@mixin baseline-grid-column-generator($grid__columns) {
+    @for $i from 1 through $grid__columns {
+        $percentage: percentage($i / $grid__columns);
+		.grid__col-#{$i}\/#{$grid__columns} {
+            flex-basis: $percentage;
+            max-width: $percentage;
+        }
+        .grid__col-offset-#{$i} {
+            margin-left: $percentage;
+        }
+        @if ($i == 1) {
+            .grid__col-order-first {
+                order: -$i;
+            }
+        }
+        .grid__col-order-#{$i} {
+            order: $i;
+        }
+        @if ($i == $grid__columns) {
+            .grid__col-order-last {
+                order: $i + 1;
+            }
+        }
+	}
+}

@@ -20,11 +20,11 @@
             altText: "facebook"
         }
     ] -%}
-<div class="row">
-    <div class="col-6/12">
+<div class="grid__row">
+    <div class="grid__col-12/12 grid__col-6/12@sm">
         <img src="{{ baseUrl }}/images/LindasTitles2.jpg" alt="Linda Price Broker, ABR, CRS, GRI, SRES, CDPE, E-PRO" />
     </div>
-    <div class="col-6/12 social-links">
+    <div class="grid__col-12/12 grid__col-order-first@xs grid__col-6/12@sm social-links">
         <ul>
             {%- for socialLink in socialLinks %}
             <li>

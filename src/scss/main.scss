@@ -1,5 +1,19 @@
 @import '_variables.scss';
-@import '_grid.scss';
+@import '_mixins.scss';
+//@import '_grid.scss';
+
+@include grid-generator($grid__breakpoints, $grid__columns, nth(nth($grid__breakpoints, 1), 1));
+
+[class*='grid__col-'] {
+    //display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+[class*='grid__col-'] img {
+    max-width: 100%;
+}
+
 @import '_global.scss';
 @import '_site.scss';
 @import '_stylesheet.scss';

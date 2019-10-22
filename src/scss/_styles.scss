@@ -1,0 +1,562 @@
+a {
+	&:link {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #FF0000;
+		text-decoration: none;
+	}
+	&:visited {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #FF0000;
+		text-decoration: none;
+	}
+	&:hover {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	&:active {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #FF0000;
+		text-decoration: none;
+	}
+	&.gsc-trailing-more-results {
+		&:link {
+			color: #000000;
+		}
+	}
+}
+div#whiteLinksToRed {
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+		&:link {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		&:visited {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		&:hover {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FF0000;
+			text-decoration: none;
+		}
+		&:active {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	}
+}
+.alltownsH2 {
+	font-size: 18pt;
+	margin: 0px;
+	text-align: center;
+}
+.allTownTownName, .allTownPhoto, .allTownLink {
+	font-weight: bold;
+	text-align: center;
+}
+.allTownTownName {
+	color: #0000ff;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.allTownLink {
+	color: #c00;
+	font-style: italic;
+}
+.body {
+	background-image: url(../images/BackgroundStripe.jpg);
+	font-family: arial,tahoma,verdana;
+	background-repeat: repeat-x;
+	background-color: #252EF5;
+	color: #FFFFFF;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.bigBold, .bigBold11, .bigBold12, .bigBold16 {
+	font-weight: bold;
+}
+.bigBold11 {
+	font-size: 11pt;
+}
+.bigBold12 {
+	font-size: 12pt;
+}
+.bigBoldGreen12 {
+	font-size: 12pt;
+}
+.bigBold {
+	font-size: 14pt;
+}
+.bigBold16 {
+	font-size: 16pt;
+}
+.blue {
+	color: #00c;
+	text-decoration: none;
+}
+.contactus {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 2em;
+	padding-left: 1em;
+	text-decoration: none;
+	A {
+		text-decoration: none;
+	}
+}
+.contactInfo {
+	color: #000;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+}
+.homepagelinks {
+	font-family: arial,tahoma,helvetica;
+	font-weight: bold;
+	font-size: 11pt;
+	height: 72px;
+}
+.headingallpages {
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.headingallpagesblue {
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	border-width: 0px;
+}
+.listingLabel {
+	font-weight: bold;
+}
+.listingLink {
+	color: #00C;
+	&:visited {
+		color: #009;
+	}
+}
+.mNav {
+	font-weight: bold;
+	text-align: center;
+	width: 150px;
+	A {
+		color: #FFF;
+	}
+}
+.mainText {
+	font-size: 12pt;
+	line-height: 1.5em;
+	A {
+		color: #00C;
+	}
+}
+#nav {
+	background-image: url("../TEST/bg_nav.gif");
+	height: 34px;
+}
+.red, .redItal {
+	color: #c00;
+	text-decoration: none;
+}
+.redItal, .blackItal {
+	font-style: italic;
+	font-weight: bold;
+}
+.subheadingallpages {
+	font-size: 23px;
+	text-align: center;
+	font-weight: bold;
+}
+.subheadingallpagesblue {
+	font-size: 23px;
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	border-width: 0px;
+}
+.showcaseTable {
+	width: 775px;
+}
+.showcaseH1 {
+	font-size: 22pt;
+	margin: 8px 0px 8px 0px;
+	text-align: center;
+	width: 775px;
+}
+.showcaseTD {
+	border-bottom: 1px #666 dashed;
+	padding: 8px 0px;
+}
+.showcaseCategory {
+	H3 {
+		margin: 10px 0px 0px 0px;
+	}
+}
+.showcasePrice {
+	font-size: 14pt;
+}
+.showcaseAddress {
+	font-size: 10pt;
+}
+.showcaseDesc {
+	font-size: 10pt;
+	font-style: italic;
+	font-weight: bold;
+	color: #c00;
+}
+.showcaseMoreResults {
+	text-align: right;
+}
+.showcaseSub {
+	font-size: 10pt;
+}
+.white_no_decoration {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body {
+	background-color: #252EF5;
+}
+.social-links {
+	background-color: #010066;
+	background-image: url("http://www.lindaprice.com/images/allPages/bannerFade.jpg");
+}
+.multipleslides {
+	position: relative;
+	cursor: pointer;
+	border: 1px solid #006;
+	& > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.top-right-red {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #fff;
+	text-align: center;
+	background-color: #cc0000;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 18px;
+	border-top-width: 7px;
+	border-right-width: 7px;
+	border-bottom-width: 7px;
+	border-left-width: 7px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ff6666;
+	border-right-color: red;
+	border-bottom-color: red;
+	border-left-color: #ff6666;
+	a {
+		&:link {
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+		&:hover {
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+		&:visited {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		&:active {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	}
+}
+.red-link {
+	color: #CC0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.blue-link {
+	&:hover {
+		color: #0000FF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+.blue-link-small {
+	color: #0000FF;
+	text-decoration: none;
+	&:hover {
+		color: #CC0000;
+		text-decoration: none;
+	}
+}
+.blue-link-big {
+	color: #0000FF;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	&:hover {
+		color: #CC0000;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+	}
+}
+.colorChangeWhiteToRed {
+	color: #FFFFFF;
+	&:hover {
+		color: #FF0000;
+	}
+}
+.colorChangeRedToWhite {
+	color: #FF0000;
+	&:hover {
+		color: #FFFFFF;
+	}
+}
+.blackTxt {
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+}
+.blueTxt {
+	font-size: 13px;
+	color: #0000FF;
+	font-weight: bold;
+	font-style: italic;
+}
+.thinText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.TxtMax {
+	font-size: 22px;
+	font-weight: bold;
+	color: #99CC00;
+}
+.TxtGreenMax {
+	font-size: 26px;
+	font-weight: bold;
+	color: #99CC00;
+}
+.TxtLightBluee {
+	font-size: 12px;
+	color: #97A4FB;
+}
+.txtWhiteSmall {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 10px 0px 10px 0px;
+}
+.txtWhiteMed {
+	font-size: 21px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 0px 10px 0px;
+}
+.txtWhiteBig {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 0px 10px 0px;
+}
+.txtWhiteMax {
+	font-size: 26px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 0px 10px 0px;
+}
+.txtWhiteMaxMax {
+	font-size: 40px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 0px 10px 0px;
+}
+.txtRedMaxSmall {
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 16px;
+}
+.txtRedSmall {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.txtRedMaxSmallSmall {
+	font-size: 15px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.txtRedMed {
+	font-size: 21px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 10px 0px 10px 0px;
+}
+.txtRedBig {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 5px 0px 5px 0px;
+}
+.txtRedMax {
+	font-size: 26px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 5px 0px 5px 0px;
+}
+.txtRedMaxMaXXX {
+	font-size: 35px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 10px 0px 10px 0px;
+}
+.txtRedMaxMax {
+	font-size: 40px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 10px 0px 10px 0px;
+}
+.txtRedXtream {
+	font-size: 50px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 10px 0px 10px 0px;
+}
+.WhiteLink {
+	color: #CCCCCC;
+}
+.confirmation-field {
+	display: none;
+}
+#banner {
+	min-width: 512px;
+	height: 154px;
+}
+#cse {
+	width: 250px;
+	float: right;
+	margin-top: 10px;
+	position: inherit;
+}
+.gsc-control-cse {
+	font-family: Arial, sans-serif;
+	border-color: #000000;
+	background-color: #010066;
+}
+input {
+	&.gsc-input {
+		border-color: #cc0000;
+	}
+	&.gsc-search-button {
+		border-color: #000000;
+		background-color: #3366ff;
+	}
+}
+.gsc-tabHeader {
+	&.gsc-tabhInactive {
+		border-color: #cc0000;
+		background-color: #666666;
+	}
+	&.gsc-tabhActive {
+		border-color: #c0c0c0;
+		background-color: #000000;
+	}
+}
+.gsc-tabsArea {
+	border-color: #c0c0c0;
+}
+.gsc-webResult {
+	&.gsc-result {
+		border-color: #000000;
+		background-color: #ffffff;
+		&:hover {
+			border-color: #c0c0c0;
+			background-color: #999999;
+		}
+	}
+}
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b {
+	color: #000000;
+}
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b {
+	color: #333333;
+}
+.gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b {
+	color: #000000;
+}
+.gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b {
+	color: #000000;
+}
+.gsc-cursor-page {
+	color: #000000;
+}
+.gs-webResult {
+	.gs-snippet {
+		color: #000000;
+	}
+	div {
+		&.gs-visibleUrl {
+			color: #999999;
+		}
+		&.gs-visibleUrl-short {
+			color: #999999;
+			display: none;
+		}
+		&.gs-visibleUrl-long {
+			display: block;
+		}
+	}
+}
+.gsc-cursor-box {
+	border-color: #000000;
+}
+.gsc-results {
+	.gsc-cursor-page {
+		border-color: #cc0000;
+		background-color: #ffffff;
+		&.gsc-cursor-current-page {
+			border-color: #c0c0c0;
+			background-color: #000000;
+		}
+	}
+}
+.gs-promotion {
+	border-color: #CCCCCC;
+	background-color: #E6E6E6;
+}
+.gs-promotion a.gs-title:link, .gs-promotion a.gs-title:link *, .gs-promotion .gs-snippet a:link {
+	color: #0000CC;
+}
+.gs-promotion a.gs-title:visited, .gs-promotion a.gs-title:visited *, .gs-promotion .gs-snippet a:visited {
+	color: #0000CC;
+}
+.gs-promotion a.gs-title:hover, .gs-promotion a.gs-title:hover *, .gs-promotion .gs-snippet a:hover {
+	color: #444444;
+}
+.gs-promotion a.gs-title:active, .gs-promotion a.gs-title:active *, .gs-promotion .gs-snippet a:active {
+	color: #00CC00;
+}
+.gs-promotion .gs-snippet, .gs-promotion .gs-title .gs-promotion-title-right, .gs-promotion .gs-title .gs-promotion-title-right * {
+	color: #ffffff;
+}
+.gs-promotion .gs-visibleUrl, .gs-promotion .gs-visibleUrl-short {
+	color: #00CC00;
+}

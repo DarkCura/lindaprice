@@ -1,1 +1,17 @@
+$grid__columns: 12;
+
+$grid__xs: -16;//-1rem
+$grid__sm: 576;//36rem
+$grid__md: 768;//48rem
+$grid__lg: 992;//62rem
+$grid__xl: 1200;//75rem
+
+$grid__breakpoints: (
+    ('xs', $grid__xs),
+    ('sm', $grid__sm),
+    ('md' $grid__md),
+    ('lg', $grid__lg),
+    ('xl', $grid__xl)
+);
+
 $blue: #010066;
