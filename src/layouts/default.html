@@ -17,7 +17,8 @@
     "./scripts/411foreclosureconnection.js",
     "https://code.jquery.com/jquery-3.4.1.min.js",
     "./scripts/pngfix.js",
-    "./scripts/AC_RunActiveContent.js"
+    "./scripts/AC_RunActiveContent.js",
+    "./scripts/colorStep.js"
     ] -%}
 <!--
     MISSING SCRIPTS: 
@@ -48,7 +49,9 @@
         {% include "../includes/google-search.html" %}
         <div class="grid">
             {% include "../includes/header.html" %}
-            {% block content %}{% endblock %}
+            <section>
+                {% block content %}{% endblock %}
+            </section>
         </div>
 
         {%- for script in scripts %}

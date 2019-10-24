@@ -39,7 +39,7 @@
             flex-basis: $percentage;
             max-width: $percentage;
         }
-        .grid__col-offset-#{$i}\@#{$grid__size} {
+        .grid__col-offset-#{$i}\/#{$grid__columns}\@#{$grid__size} {
             margin-left: $percentage;
         }
         @if ($i == 1) {
@@ -65,7 +65,7 @@
             flex-basis: $percentage;
             max-width: $percentage;
         }
-        .grid__col-offset-#{$i} {
+        .grid__col-offset-#{$i}\/#{$grid__columns} {
             margin-left: $percentage;
         }
         @if ($i == 1) {

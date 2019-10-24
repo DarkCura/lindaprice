@@ -1,0 +1,16 @@
+<script>
+    (function($) {
+        $('.townslides').each(function() {
+            var $this = this;
+            $('> :gt(0)', $this).hide();
+            setInterval(function() {
+                $('> :first-child', $this)
+                    .fadeOut()
+                    .next()
+                    .fadeIn()
+                    .end()
+                    .appendTo($this);
+            }, 6000);
+        })
+    })(jQuery);
+</script>

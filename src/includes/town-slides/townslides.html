@@ -1,0 +1,9 @@
+<div class="grid__row">
+   <div class="grid__col-6/12 grid__col-offset-3/12">
+        <div class="townslides">
+            {%- for i in 1..22 %}
+            <img src="{{ baseUrl }}/images/slideshowTowns/{{ i }}.jpg" alt="Slide {{i}}" {% if i == 1 %}class="active"{%- endif %} />
+            {% endfor -%}
+        </div>
+    </div> 
+</div>
