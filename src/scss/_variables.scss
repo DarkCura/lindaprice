@@ -14,4 +14,39 @@ $grid__breakpoints: (
     ('xl', $grid__xl)
 );
 
+$font-family: 'Lato', sans-serif;
+$font-family-2: 'Great Vibes', cursive;
+
+$white: rgba(255, 255, 255, 1);
+
+$red: rgba(255, 0, 0, 1);
+$red-2: rgba(204, 0, 0, 1);
+
+$green: rgba(0, 153, 0, 1);
+
 $blue: #010066;
+$blue-2: rgba(0, 0, 153, 1);
+
+$back-grad-start: rgba(0, 0, 60, 1);
+$back-grad-end: rgba(37, 46, 245, 1);
+
+$gradient-start: rgba(1, 0, 102, 1);
+$gradient-end: rgba(0, 0, 204, 1);
+
+$nav-red-1: #f5978e;
+$nav-red-2: #f24537;
+$nav-red-3: #d02718;
+$nav-red-4: #c62d1f;
+$nav-red-5: #810e05;
+
+$nav-green-1: #a4e271;
+$nav-green-2: #89c403;
+$nav-green-3: #74b807;
+$nav-green-4: #77a809;
+$nav-green-5: #528009;
+
+$nav-blue-1: #97c4fe;
+$nav-blue-2: #3d94f6;
+$nav-blue-3: #337fed;
+$nav-blue-4: #1e62d0;
+$nav-blue-5: #1570cd;

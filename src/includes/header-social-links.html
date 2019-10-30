@@ -1,6 +1,7 @@
 {%- set socialLinks = [
         {
             href: "http://www.bloglindaprice.com/",
+            svgSrc: "../svg/blogger.svg",
             imgSrc: baseUrl ~ "/images/allPages/BLOG_Button_2.jpg",
             altText: "Blog"
         },
@@ -20,16 +21,24 @@
             altText: "facebook"
         }
     ] -%}
-<div class="grid__row">
-    <div class="grid__col-12/12 grid__col-6/12@sm">
-        <img src="{{ baseUrl }}/images/LindasTitles2.jpg" alt="Linda Price Broker, ABR, CRS, GRI, SRES, CDPE, E-PRO" />
+<div class="grid__row horizontal-gradient">
+    <div class="grid__col-12/12 grid__col-6/12@sm txt white">
+        <span class="signature">
+            Linda Price
+        </span><br />
+        Broker, ABR, CRS, GRI, SRES, CDPE, E-PRO
+        <!-- <img src="{{ baseUrl }}/images/LindasTitles2.jpg" alt="Linda Price Broker, ABR, CRS, GRI, SRES, CDPE, E-PRO" /> -->
     </div>
     <div class="grid__col-12/12 grid__col-order-first@xs grid__col-6/12@sm social-links">
         <ul>
             {%- for socialLink in socialLinks %}
             <li>
-                <a href="{{ socialLink.href }}" target="_blank">
+                <a href="{{ socialLink.href }}" target="_blank" {% if (socialLink.svgSrc is not null and socialLink.svgSrc is not empty) %}class="icon blogger"{% endif %}>
+                    {% if (socialLink.svgSrc is not null and socialLink.svgSrc is not empty) %}
+                        {% include socialLink.svgSrc %}
+                    {% else %}
                     <img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.altText }}" />
+                    {% endif %}
                 </a>
             </li>
             {%- endfor %}

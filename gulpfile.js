@@ -23,5 +23,15 @@ function MinifyJS() {
     }).pipe(gulp.dest('./scripts'));
 }
 
+/*
+function MinifySVG() {
+    return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/svg/*.svg'], {
+        allowEmpty: true,
+    }).pipe(gulp.dest('./svg'));
+}
+*/
+
 exports.Templates = Templates;
-exports.Minify = gulp.parallel(MinifyCSS, MinifyJS);
+exports.Minify = gulp.parallel(MinifyCSS, MinifyJS); //MinifySVG
+
+exports.Build = gulp.series(Templates, gulp.parallel(MinifyCSS, MinifyJS)); //MinifySVG
