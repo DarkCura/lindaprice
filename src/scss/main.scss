@@ -13,6 +13,15 @@ html {
 }
 
 header {
+    .quick-links {
+        background-color: $red-2;
+        ul {
+            list-style: none;
+            a {
+                color: $white;
+            }
+        }
+    }
     .signature {
         display: inline-block;
         box-sizing: border-box;
@@ -28,26 +37,49 @@ header {
                 display: inline-block;
                 width: 25%;
                 a {
+                    border-radius: 0.5rem;
                     display: inline-block;
                     text-decoration: none;
                     &.icon {
                         svg {
-                            border-radius: 0.5rem;
-                            max-width: 3rem;
+                            margin: 0.5rem;
+                            width: 2rem;
+                            height: auto;
+                            background-clip: padding-box;
                         }
                     }
                     &.blogger {
+                        background-color: $blogger;
                         svg {
-                            fill: orange;    
-                            background-color: $white;
+                            fill: $white;
+                        }
+                    }
+                    &.linkedin {
+                        background-color: $linkedin;
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                    &.twitter {
+                        background-color: $twitter;
+                        svg {
+                            fill: $white;
+                        }
+                    }
+                    &.facebook {
+                        overflow: hidden;
+                        background-color: $facebook;
+                        svg {
+                            position: relative;
+                            top: 0.5rem;
+                            left: 0.25rem;
+                            fill: $white;
                         }
                     }
                 }
                 a:hover {
                     &.blogger {
-                        svg {
-                            fill: red;
-                        }
+                        background-color: red;
                     }
                 }
             }
@@ -64,7 +96,7 @@ nav {
         box-sizing: border-box;
         text-decoration: none;
         padding: 0.5rem;
-        font-weight: bold;
+        //font-weight: bold;
         cursor: pointer;
 
         &.background {

@@ -1,24 +1,31 @@
 {%- set socialLinks = [
         {
             href: "http://www.bloglindaprice.com/",
-            svgSrc: "../svg/blogger.svg",
+            svgSrc: "../../svg/blogger.svg",
+            svgClass: "blogger",
             imgSrc: baseUrl ~ "/images/allPages/BLOG_Button_2.jpg",
-            altText: "Blog"
+            title: "Blogger"
         },
         {
             href: "http://www.linkedin.com/home?trk=guest_home_login",
+            svgSrc: "../../svg/linkedin.svg",
+            svgClass: "linkedin",
             imgSrc: baseUrl ~ "/images/allPages/linkedin11.jpg",
-            altText: "LinkedIn"
+            title: "LinkedIn"
         },
         {
             href: "http://twitter.com/#!/search/lindapriceremax",
+            svgSrc: "../../svg/twitter.svg",
+            svgClass: "twitter",
             imgSrc: baseUrl ~ "/images/allPages/twitter11.jpg",
-            altText: "twitter"
+            title: "twitter"
         },
         {
             href: "http://www.facebook.com/pages/Linda-Price/131540076910992",
+            svgSrc: "../../svg/facebook.svg",
+            svgClass: "facebook",
             imgSrc: baseUrl ~ "/images/allPages/facebook11.jpg",
-            altText: "facebook"
+            title: "facebook"
         }
     ] -%}
 <div class="grid__row horizontal-gradient">
@@ -33,11 +40,11 @@
         <ul>
             {%- for socialLink in socialLinks %}
             <li>
-                <a href="{{ socialLink.href }}" target="_blank" {% if (socialLink.svgSrc is not null and socialLink.svgSrc is not empty) %}class="icon blogger"{% endif %}>
+                <a href="{{ socialLink.href }}" target="_blank" title="{{ socialLink.title }}" {% if (socialLink.svgSrc is not null and socialLink.svgSrc is not empty) %}class="icon {{ socialLink.svgClass }}"{% endif %}>
                     {% if (socialLink.svgSrc is not null and socialLink.svgSrc is not empty) %}
                         {% include socialLink.svgSrc %}
                     {% else %}
-                    <img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.altText }}" />
+                        <img src="{{ socialLink.imgSrc }}" alt="{{ socialLink.title }}" />
                     {% endif %}
                 </a>
             </li>

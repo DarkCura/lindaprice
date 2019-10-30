@@ -9,16 +9,16 @@ function Templates() {
 }
 
 function MinifyCSS() {
-    return gulp.src(['/src/scss/*.scss'], {
+    return gulp.src(['src/scss/*.scss'], {
         allowEmpty: true,
     }).pipe(sass({
-        outputStyle: 'compressed',
+        outputStyle: 'compact',
         verbose: true,
     })).pipe(gulp.dest('./css'));
 }
 
 function MinifyJS() {
-    return gulp.src(['/src/scripts/*.js'], {
+    return gulp.src(['src/scripts/*.js'], {
         allowEmpty: true,
     }).pipe(gulp.dest('./scripts'));
 }
@@ -30,6 +30,8 @@ function MinifySVG() {
     }).pipe(gulp.dest('./svg'));
 }
 */
+
+exports.MinifyCSS = MinifyCSS;
 
 exports.Templates = Templates;
 exports.Minify = gulp.parallel(MinifyCSS, MinifyJS); //MinifySVG

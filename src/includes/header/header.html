@@ -26,9 +26,9 @@
                 <img src="{{ baseUrl }}/lindaprice/images/lindaprice22.jpg" alt="Linda Price" />
             </div>
             <div class="grid__col-12/12 grid__col-8/12@md grid__col-order-1 grid__col-order-2@md">
-                {% include "skyline.html" %}
+                {% include "../skyline.html" %}
             </div>
-            <div class="grid__col-12/12 grid__col-2/12@md grid__col-order-3">
+            <div class="grid__col-12/12 grid__col-2/12@md grid__col-order-3 quick-links">
                 <ul>
                     {%- for link in links %}
                     <li>
@@ -41,5 +41,5 @@
         {% include "header-social-links.html" %}
     </header>
     <nav>
-        {% include "navigation.html" %}
+        {% include "../navigation/navigation.html" %}
     </nav>

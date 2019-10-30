@@ -49,9 +49,9 @@
         -->
     </head>
     <body>
-        {% include "../includes/google-search.html" %}
+        {% include "../includes/google-search/google-search.html" %}
         <div class="grid">
-            {% include "../includes/header.html" %}
+            {% include "../includes/header/header.html" %}
             <section>
                 {% block content %}{% endblock %}
             </section>
@@ -60,7 +60,7 @@
         {%- for script in scripts %}
         <script src="{{ script }}" async></script>
         {%- endfor %}
-        {% include "../includes/google-search-script.html" %}
+        {% include "../includes/google-search/google-search-script.html" %}
         {% include "../includes/skyline-script.html" %}
         {% include "../includes/multiple-slides-script.html" %}
     </body>
