@@ -9,7 +9,7 @@ function Templates() {
 }
 
 function MinifyCSS() {
-    return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/scss/*.scss'], {
+    return gulp.src(['/src/scss/*.scss'], {
         allowEmpty: true,
     }).pipe(sass({
         outputStyle: 'compressed',
@@ -18,14 +18,14 @@ function MinifyCSS() {
 }
 
 function MinifyJS() {
-    return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/scripts/*.js'], {
+    return gulp.src(['/src/scripts/*.js'], {
         allowEmpty: true,
     }).pipe(gulp.dest('./scripts'));
 }
 
 /*
 function MinifySVG() {
-    return gulp.src(['C:/Users/wto6337/source/repos/GitHub/lindaprice/src/svg/*.svg'], {
+    return gulp.src(['/src/svg/*.svg'], {
         allowEmpty: true,
     }).pipe(gulp.dest('./svg'));
 }
